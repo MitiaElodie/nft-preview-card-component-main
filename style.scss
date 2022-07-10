@@ -1,3 +1,12 @@
+$white: hsl(0, 0%, 100%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$p-color: hsl(215, 32%, 27%);
+$card-width: 350px;
+$cyan: hsl(178, 100%, 50%);
+$soft-blue: hsl(215, 51%, 70%);
+// 300, 400, 600
+
 * {
    margin: 0;
    padding: 0;
@@ -7,6 +16,65 @@
 body {
    font-family: Outfit;
    font-size: 18px;
+   color: $soft-blue;
+   font-weight: 300;
+}
+
+.nft {
+   &__container {
+      height: 100vh;
+      background-color: $main-bg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__card-container {
+      width: $card-width;
+      background-color: $card-bg;
+      padding: 25px;
+      margin: 25px;
+      border-radius: 20px;
+   }
+
+   &__image {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+   }
+
+   &__text-details {
+      margin-top: 20px;
+   }
+
+   &__creator,
+   &__title {
+      color: $white;
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: 22px;
+   }
+
+   &__value {
+      color: $cyan;
+   }
+
+   &__values-container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__value-container,
+   &__days-left-container {
+      display: flex;
+      align-items: center;
+   }
+
+   &__icon {
+      margin-right: 10px;
+   }
 }
 
 .attribution { font-size: 11px; text-align: center; }

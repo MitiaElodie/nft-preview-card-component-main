@@ -7,6 +7,52 @@
 body {
   font-family: Outfit;
   font-size: 18px;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+
+.nft__container {
+  height: 100vh;
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nft__card-container {
+  width: 350px;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 25px;
+  margin: 25px;
+  border-radius: 20px;
+}
+.nft__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.nft__text-details {
+  margin-top: 20px;
+}
+.nft__creator, .nft__title {
+  color: hsl(0deg, 0%, 100%);
+}
+.nft__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.nft__value {
+  color: hsl(178deg, 100%, 50%);
+}
+.nft__values-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nft__value-container, .nft__days-left-container {
+  display: flex;
+  align-items: center;
+}
+.nft__icon {
+  margin-right: 10px;
 }
 
 .attribution {
