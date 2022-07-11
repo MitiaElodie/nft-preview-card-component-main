@@ -5,6 +5,7 @@ $p-color: hsl(215, 32%, 27%);
 $card-width: 350px;
 $cyan: hsl(178, 100%, 50%);
 $soft-blue: hsl(215, 51%, 70%);
+$img-length: 35px;
 // 300, 400, 600
 
 * {
@@ -37,9 +38,37 @@ body {
       border-radius: 20px;
    }
 
+   &__image-container {
+      position: relative;
+      transition: 200ms all ease-in-out;
+      overflow: hidden;
+      line-height: 0; // remove the 5px under the div
+      
+      &:hover {
+         .nft__image-hover {
+            opacity: 1;
+         }
+      }
+   }
+
    &__image {
       height: 100%;
       width: 100%;
+      border-radius: 10px;
+   }
+
+   &__image-hover {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      background-color: rgba($cyan, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 10px;
    }
 
@@ -50,20 +79,38 @@ body {
    &__creator,
    &__title {
       color: $white;
+      transition: 200ms color ease-in-out;
+
+      &:hover {
+         cursor: pointer;
+         color: $cyan;
+      }
    }
 
    &__title {
       font-weight: 600;
       font-size: 22px;
+      margin-bottom: 20px;
+   }
+
+   &__details {
+      line-height: 1.5em;
    }
 
    &__value {
       color: $cyan;
    }
 
+   &__separator {
+      border: none;
+      border-bottom: 1px solid $p-color;
+   }
+
    &__values-container {
       display: flex;
       justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
    }
 
    &__value-container,
@@ -74,6 +121,27 @@ body {
 
    &__icon {
       margin-right: 10px;
+   }
+
+   &__creator-container {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+   }
+
+   &__creator-avatar-container {
+      width: $img-length;
+      height: $img-length;
+      display: flex;
+      align-items: center;
+      border-radius: 100px;
+      border: 1px solid $white;
+      margin-right: 20px;
+   }
+
+   &__creator-avatar {
+      width: 100%;
+      height: 100%;
    }
 }
 
