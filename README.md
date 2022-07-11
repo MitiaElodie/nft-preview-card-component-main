@@ -14,8 +14,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -46,7 +44,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Overlay div](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - This helped me to add the hover effect on the image.
+- [Overlay div](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - This helped me to add the hover effect to the image.
 ## Author
 - Frontend Mentor - [@MitiaElodie](https://www.frontendmentor.io/profile/MitiaElodie)
 
